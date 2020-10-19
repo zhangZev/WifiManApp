@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <include layout="@layout/include_basetitle_searchview" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/color_24a3ff">
+
+        <TextView
+            android:id="@+id/tv_titleselect"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:drawableEnd="@drawable/icon_home_down_sanjiao"
+            android:drawablePadding="@dimen/margin_8"
+            android:drawableTint="@color/white"
+            android:gravity="center"
+            android:text="WIFI"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_14" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RadioGroup
+            android:id="@+id/rg_all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="gone"
+            android:padding="@dimen/padding_15"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="自动"
+                android:buttonTint="@color/white"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_14" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手动慢"
+                android:layout_marginStart="50dp"
+                android:buttonTint="@color/white"
+                android:layout_marginEnd="50dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_14" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手动快"
+                android:buttonTint="@color/white"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_14" />
+        </RadioGroup>
+
+        <com.dlong.rep.dlroundmenuview.DLRoundMenuView
+            android:id="@+id/dl_rmv"
+            android:layout_width="200dp"
+            android:layout_marginTop="150dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            app:RMCoreMenuDrawable="@mipmap/circle"
+            app:RMRoundMenuDrawable="@mipmap/go" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <drawable name="drawable_activity_bg">@color/color_window_bg</drawable>
+    <drawable name="dialog_activity_bg">#30000000</drawable>
+    <color name="color_disabled">#e0e0e0</color>
+    <color name="color_window_bg">#f3f3f3</color>
+    <color name="dialog_window_bg">#30000000</color>
+
+    <color name="color_noraml_pressed">#20aaaaaa</color>
+    <!-- App 主色调 -->
+    <color name="color_app_main">#019ee8</color>
+    <color name="text_color_primary">#2d2d2d</color>
+    <color name="text_color_secondary">#6c6c6c</color>
+    <color name="text_color_danger">#ff3d43</color>
+
+    <!--按钮等背景颜色 -正常-->
+    <color name="color_dark_bg_n">@color/color_app_main</color>
+    <!--按钮等背景颜色 -按下-->
+    <color name="color_dark_bg_h">#2882c1</color>
+
+    <!--按钮等背景颜色 -禁用-->
+    <color name="color_dark_bg_d">@color/color_disabled</color>
+
+    <!--按钮等背景颜色 -正常-->
+    <color name="color_light_bg_n">#fff</color>
+    <!--按钮等背景颜色 -按下-->
+    <color name="color_light_bg_h">#ccc</color>
+    <!--按钮等背景颜色 -禁用-->
+    <color name="color_light_bg_d">@color/color_disabled</color>
+
+    <!-- 文字颜色 亮色-->
+    <color name="color_light_text_n">#eeeeee</color>
+    <color name="color_light_text_h">#eeeeee</color>
+    <color name="color_light_text_d">#eeeeee</color>
+    <color name="color_light_text_hint">#aaaaaa</color>
+    <!-- 文字颜色 暗色-->
+    <color name="color_dark_text_n">#2b2b2b</color>
+    <color name="color_dark_text_h">#444444</color>
+    <color name="color_dark_text_d">#666666</color>
+    <color name="color_dark_text_hint">#6c6c6c</color>
+
+    <color name="dialog_title_color">@color/text_color_primary</color>
+    <color name="dialog_text_color">@color/text_color_primary</color>
+
+
+</resources>

@@ -1,0 +1,25 @@
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="?attr/colorControlHighlight">
+    <item >
+        <selector>
+            <item android:state_pressed="false">
+                <shape>
+                    <solid android:color="@color/color_light_bg_n"/>
+                    <corners android:radius="4dp"/>
+                </shape>
+            </item>
+            <item android:state_pressed="true">
+                <shape>
+                    <solid android:color="@color/color_light_bg_h"/>
+                    <corners android:radius="4dp"/>
+                </shape>
+            </item>
+            <item android:state_enabled="false">
+                <shape>
+                    <solid android:color="@color/color_light_bg_d"/>
+                    <corners android:radius="4dp"/>
+                </shape>
+            </item>
+        </selector>
+    </item>
+</ripple>

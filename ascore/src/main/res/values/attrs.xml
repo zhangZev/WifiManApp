@@ -1,0 +1,99 @@
+<resources>
+
+
+
+    <!--红点-->
+    <declare-styleable name="BadgeView">
+        <attr name="iconSrc" format="reference" />
+        <attr name="iconWidth" format="dimension" />
+        <attr name="iconHeight" format="dimension" />
+        <!--若是icon是正方形的,可直接设置这个参数-->
+        <attr name="iconSize" format="dimension" />
+
+        <attr name="text" format="string" />
+        <attr name="textSize" format="dimension" />
+        <attr name="textColor" format="color" />
+
+        <attr name="badgeNum" format="integer" />
+        <!--是否显示数字, 为false时只显示小红点; 没有数字时,小红点的大小通过badgeSize设置-->
+        <attr name="showNum" format="boolean" />
+        <attr name="badgeBackgroundColor" format="color" />
+        <!--限制设置小红点的大小不能超过数字显示模式(代码中也做了限制); 显示在文字模式大小的左下角;-->
+        <!-- 不显示数字时, 小红点的大小, 不包括边线-->
+        <attr name="badgeRedSize" format="dimension" />
+        <attr name="badgeNumSize" format="dimension" />
+        <attr name="badgeNumColor" format="color" />
+        <!--若小红点有边缘线,加上边缘线-->
+        <attr name="badgeBorderColor" format="color" />
+        <attr name="badgeBorderWidth" format="dimension" />
+        <!--badge相对于主体右上角的相对位置, 重叠的部分的大小; 可以设置负值-->
+        <!--默认是( badgeHeight/2 ), 正好覆盖一个角-->
+        <attr name="badgeBottom" format="dimension" />
+        <attr name="badgeLeft" format="dimension" />
+        <!-- 有些设计要求未读前面加"+", (至少我们设计师这么设计) 显示成 +1/+34/+99-->
+        <attr name="badgeNumPre" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_circle_background_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="AVLoadingIndicatorView">
+        <attr name="minWidth" format="dimension" />
+        <attr name="maxWidth" format="dimension" />
+        <attr name="minHeight" format="dimension" />
+        <attr name="maxHeight" format="dimension" />
+        <attr name="indicatorName" format="string" />
+        <attr name="indicatorColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleProgressBar">
+        <!-- 是否开启抗锯齿 -->
+        <attr name="antiAlias" format="boolean" />
+        <!-- 圆弧起始角度，3点钟方向为0，顺时针递增，小于0或大于360进行取余 -->
+        <attr name="startAngle" format="float" />
+        <!-- 圆弧度数 -->
+        <attr name="sweepAngle" format="float" />
+        <!-- 设置动画时间 -->
+        <attr name="animTime" format="integer" />
+        <!-- 绘制内容的数值 -->
+        <attr name="maxValue" format="float" />
+        <attr name="value" format="float" />
+        <!-- 绘制内容的单位 -->
+        <attr name="unit" format="string|reference" />
+        <attr name="unitSize" format="dimension" />
+        <attr name="unitColor" format="color|reference" />
+        <!-- 绘制内容相应的提示语 -->
+        <attr name="hint" format="string|reference" />
+        <attr name="hintSize" format="dimension" />
+        <attr name="hintColor" format="color|reference" />
+        <!-- 精度，默认为0 -->
+        <attr name="precision" format="integer" />
+        <attr name="valueSize" format="dimension" />
+        <attr name="valueColor" format="color|reference" />
+        <!-- 背景圆弧颜色，默认白色 -->
+        <attr name="bgArcColor" format="color|reference" />
+        <!-- 圆弧宽度 -->
+        <attr name="arcWidth" format="dimension" />
+        <!-- 圆弧颜色， -->
+        <attr name="arcColors" format="color|reference" />
+        <!-- 文字的偏移量 相对于圆半径而言，默认三分之一 -->
+        <attr name="textOffsetPercentInRadius" format="float" />
+        <!-- 背景圆弧宽度 -->
+        <attr name="bgArcWidth" format="dimension" />
+        <!-- 线条数 -->
+        <attr name="dottedLineCount" format="integer" />
+        <!-- 圆弧跟虚线之间的距离 -->
+        <attr name="lineDistance" format="integer" />
+        <!-- 线条宽度 -->
+        <attr name="dottedLineWidth" format="dimension" />
+        <attr name="bigSize" format="dimension" />
+    </declare-styleable>
+
+
+</resources>

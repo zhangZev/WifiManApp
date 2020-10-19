@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string name="page_adapter_loading_text">加载中...</string>
+	<string name="page_adapter_loading_text_no_more">没有更多了</string>
+	<string name="page_adapter_loading_text_more">加载更多</string>
+	<string name="network_not_connection">网络连接失败</string>
+	<string name='operating_please_wait'>正在处理，请稍候..</string>
+	<string name='press_again_to_exit'>再按一次确认退出</string>
+	<string name="edti_reg_uname_hint">请输入11位手机号</string>
+	<string name="edti_msg_code_hint">请输入验证码</string>
+	<string name="edti_reg_pwd_hint">请输入6-11位字母和数字密码</string>
+	<string name="msg_send_code">获取验证码</string>
+	<string name="msg_code_sent_succeed">验证码已发送</string>
+	<string name="msg_code_sent_failed">发送失败，请稍后再试</string>
+	<string name="msg_get_code_wait">(%1$d)秒后重新获取</string>
+	<string name="msg_check_code">请输入手机验证码</string>
+	<string name="regist">注册</string>
+	<string name="click_to_login">点击登录</string>
+	<string name="reg_tips">友情提示：\n
+1，如果您的手机安装了类似360手机卫士等app时，请查看验证码短信是否被屏蔽成垃圾短信处理。\n
+2，如果您是移动运营商的投诉用户，运营商会主动为您屏蔽手机短信验证的服务，请麻烦联系相关运营商解除。</string>
+	<string name="edti_invite_hint">邀请码（可不填）</string>
+	<string name="edti_findpwd_uname_hint">请输入已注册的手机号</string>
+	<string name="edti_findpwd_pwd_hint">请输入新的6-16位密码</string>
+	<string name="edti_findpwd_pwd_again_hint">请再次输入密码</string>
+	<string name="pwd_not_the_same">两次输入的密码不一致</string>
+	<string name="if_have_no_account">还没有账号？</string>
+	<string name="next">下一步</string>
+	<string name="edti_uname_hint">请输入手机号</string>
+	<string name="edti_pwd_hint">请输入密码</string>
+	<string name="login">登录</string>
+	<string name="pls_input_name">请输入账号</string>
+	<string name="pls_input_pwd">请输入密码</string>
+	<string name="frag_init_failed">本界面初始化失败，请稍后重试</string>
+	<string name="err_retry">操作失败，请稍后重试</string>
+
+	<string name="delete">删除</string>
+	<string name="edit">修改</string>
+</resources>

@@ -1,0 +1,10 @@
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="?attr/colorControlHighlight">
+    <item >
+        <selector>
+            <item android:drawable="@drawable/drop_down_list_popup_divider_n">
+
+            </item>
+        </selector>
+    </item>
+</ripple>

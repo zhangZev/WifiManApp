@@ -1,0 +1,14 @@
+<resources>
+
+
+    <!--<string name="admin_base_url">http://192.168.0.161:8064/</string>-->
+
+   <!-- <string name="base_url">https://testwap.wanzhong.xin/</string>
+    <string name="web_base_url">https://testwww.wanzhong.xin/</string>-->
+    <!--<string name="base_url">http://10.10.10.249:8064/</string>
+    <string name="web_base_url">http://10.10.10.249:8064/</string>-->
+
+       <!--<string name="base_url">http://10.10.10.217:8061/</string>-->
+       <string name="base_url">http://134.175.126.98:9061/</string>
+       <string name="web_base_url">https://www.wanzhong.xin/</string>
+</resources>

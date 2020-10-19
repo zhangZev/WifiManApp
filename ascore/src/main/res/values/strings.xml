@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Core</string>
+    <string name="tip_img_picking">选择图片正在进行，请稍后再试</string>
+    <string name="no_img_picked">您还未选择图片</string>
+    <string name="no_img_preview">没有图片可预览</string>
+    <string name="refresh">刷新</string>
+    <string name="button_close">关闭</string>
+    <item type="id" name="radio_check_layout_select_state"/>
+
+</resources>

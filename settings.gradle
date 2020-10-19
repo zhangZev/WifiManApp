@@ -1,0 +1,1 @@
+include ':app', ':swipeback', ':asdata', ':ascore', ':appcommon', ':imagepicker', ':appupdate'

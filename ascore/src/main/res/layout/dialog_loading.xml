@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background_loading_dialog"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="25dip"
+    android:paddingEnd="40dip"
+    android:paddingStart="40dip"
+    android:paddingTop="25dip"
+    >
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:indeterminateTint="@color/white" />
+
+    <com.wanzhong.core.view.indicators.AVLoadingIndicatorView
+        android:id="@+id/indicator"
+        android:layout_width="48dip"
+        android:layout_height="48dip"
+        android:visibility="visible"
+        app:indicatorColor="@color/white"
+        app:indicatorName="BallSpinFadeLoaderIndicator" />
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dip"
+        android:text="请稍后..."
+        android:textColor="@color/text_color_light"
+        android:textSize="11sp" />
+
+</LinearLayout>

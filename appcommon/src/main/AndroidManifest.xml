@@ -1,0 +1,59 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.icanfitness.ican.app.common" >
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        >
+        <activity
+            android:name="cn.icanfitness.ican.app.common.LoginActivity"
+            android:label="@string/title_login"
+            android:theme="@style/AppNoTitleTheme"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="cn.icanfitness.ican.app.common.RegistActivity"
+            android:label="@string/title_regist"
+            android:theme="@style/AppNoTitleTheme"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="cn.icanfitness.ican.app.common.ResetPwdActivity"
+            android:label="@string/title_reset_pwd"
+            android:theme="@style/AppNoTitleTheme"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="cn.icanfitness.ican.app.common.ResetPwdActivityStep1"
+            android:label="@string/title_reset_pwd"
+            android:theme="@style/AppNoTitleTheme"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="cn.icanfitness.ican.app.common.ResetPwdActivityStep2"
+            android:label="@string/title_reset_pwd"
+            android:theme="@style/AppNoTitleTheme"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="cn.icanfitness.ican.app.common.UpdatePwdActivity"
+            android:label="@string/title_update_pwd"
+            android:theme="@style/AppNoTitleTheme"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ImgPreviewActivity"
+            android:theme="@style/ImagePickerThemeFullScreen"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".ImagePicker"
+            android:theme="@style/ImagePickerThemeFullScreen"
+            android:exported="true"
+            android:label="图片提取"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="cn.icanfitness.ican.app.common.ImagePicker"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
+    </application>
+
+</manifest>

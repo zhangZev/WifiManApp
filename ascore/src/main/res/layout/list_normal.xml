@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+	<include layout="@layout/include_basetitle" />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_widget"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+		android:layout_marginTop="1px"
+         >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadingEdgeLength="0dip"
+            android:footerDividersEnabled="false"
+            android:overScrollMode="never" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/empty_propt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="#f0f0f0"
+        android:layout_below="@id/toolbar"
+        android:visibility="gone"
+		android:paddingBottom="25dip">
+	    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/empty_propt_img"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	         />
+	    <androidx.appcompat.widget.AppCompatTextView android:id="@+id/empty_propt_text"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:layout_marginTop="15dip"
+	         />
+		<androidx.appcompat.widget.AppCompatButton
+			android:id="@+id/btn_refresh"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:minHeight="30dip"
+			android:minWidth="70dip"
+			android:gravity="center"
+			android:text="@string/refresh"
+			android:paddingLeft="5dip"
+			android:paddingRight="5dip"
+			android:layout_marginTop="20dip"
+			/>
+	</LinearLayout>
+</RelativeLayout>

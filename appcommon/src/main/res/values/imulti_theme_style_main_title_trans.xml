@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MultiThemeMainTitleTopRadius" parent="@style/MultiThemeMain">
+        <item name="titleBg">@drawable/bg_white_top_radius_8</item>
+        <item name="titleTheme">@style/MultiThemeWhiteTitleTheme</item>
+
+
+    </style>
+
+    <style name="MultiThemeWhiteTitleTheme" parent="@style/ThemeOverlay.AppCompat.Light">
+        <item name="colorControlNormal">@color/text_color_dark</item>
+    </style>
+</resources>

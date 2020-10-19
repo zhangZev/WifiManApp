@@ -1,0 +1,24 @@
+<resources>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="activity_margin_half">8dp</dimen>
+
+    <dimen name="page_adapter_loading_height">45dip</dimen>
+    <dimen name="btn_height_normal">43dip</dimen>
+
+    <dimen name="text_size_small">10sp</dimen>
+    <dimen name="text_size_normal">12sp</dimen>
+    <dimen name="text_size_large">14sp</dimen>
+    <dimen name="text_size_xlarge">16sp</dimen>
+
+    <dimen name="margin_small">3dip</dimen>
+    <dimen name="margin_normal">5dip</dimen>
+    <dimen name="margin_largge">8dip</dimen>
+    <dimen name="margin_xlargge">10dip</dimen>
+    <dimen name="margin_xxlargge">15dip</dimen>
+
+
+    <dimen name="comm_img_tv_img_width">125dip</dimen>
+    <dimen name="comm_img_tv_img_height">80dip</dimen>
+</resources>

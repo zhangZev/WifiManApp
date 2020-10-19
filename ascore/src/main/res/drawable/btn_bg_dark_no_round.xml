@@ -1,0 +1,23 @@
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="?attr/colorControlHighlight">
+    <item >
+        <selector>
+
+            <item android:state_pressed="true">
+                <shape>
+                    <solid android:color="@color/color_dark_bg_h"/>
+                </shape>
+            </item>
+            <item android:state_enabled="false">
+                <shape>
+                    <solid android:color="@color/color_dark_bg_d"/>
+                </shape>
+            </item>
+            <item >
+                <shape>
+                    <solid android:color="@color/color_dark_bg_n"/>
+                </shape>
+            </item>
+        </selector>
+    </item>
+</ripple>

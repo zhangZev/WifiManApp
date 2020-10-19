@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">AsKichainWap</string>
+	<string name="app_change_language">switch the language</string>
+	<string name="app_title">Test language</string>
+	<string name="app_english">English language</string>
+</resources>

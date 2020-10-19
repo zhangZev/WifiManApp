@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/flBack"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foreground="#00000000" />
+
+    <include layout="@layout/include_basetitle" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/llBottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_window_bg"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:paddingBottom="@dimen/margin_normal"
+                android:paddingLeft="15dp"
+                android:text="点击可编辑分享标题"
+                style="@style/textThemeDarkLarge"
+                android:textColor="@color/text_color_secondary"
+                 />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:padding="@dimen/margin_normal"
+                android:background="@color/white"
+                >
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/img_icon"
+                    android:layout_width="50dip"
+                    android:layout_height="50dip"
+                    android:layout_marginLeft="@dimen/margin_normal"
+                    android:layout_marginTop="@dimen/margin_normal"
+                    android:layout_marginBottom="@dimen/margin_normal"
+                    android:layout_centerVertical="true"
+                    />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/img_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="bottom"
+                    android:src="@drawable/icon_share_title_edit"
+                    android:background="@drawable/item_background_material"
+                    android:layout_alignBottom="@+id/et_title"
+                    />
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@id/et_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/img_edit"
+                    android:layout_toRightOf="@id/img_icon"
+                    android:layout_margin="@dimen/margin_normal"
+                    android:minHeight="50dip"
+                    android:enabled="false"
+                    style="@style/textThemeDarkLarge"
+                    android:background="@null"
+                    />
+            </RelativeLayout>
+            <!--<TextView
+                style="@style/YDLine" />-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/activity_horizontal_margin">
+
+                <LinearLayout
+                    android:id="@+id/rl_share_wechat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/icon_wechat_share" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="微信"
+                        android:textColor="#545A5A"
+                        android:textSize="13sp"
+                        android:layout_marginTop="@dimen/margin_normal"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/rl_share_wechat_circle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/icon_wechatcircle_share"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="微信朋友圈"
+                        android:textColor="#545A5A"
+                        android:textSize="13sp"
+                        android:layout_marginTop="@dimen/margin_normal"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_share_other1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    >
+
+                    <ImageView
+                        android:id="@+id/img_share_other1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_share_other1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:textColor="#545A5A"
+                        android:textSize="13sp"
+                        android:layout_marginTop="@dimen/margin_normal"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/color_EEEEEE" />
+
+            <TextView
+                android:id="@+id/tv_cancle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:text="取消分享"
+                style="@style/textThemeDarkLarge"
+                android:textSize="16sp"
+                android:background="@drawable/item_background_material"
+                />
+
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

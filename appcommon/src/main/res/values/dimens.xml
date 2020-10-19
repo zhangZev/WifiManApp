@@ -1,0 +1,5 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="block_margin">10dp</dimen>
+    <dimen name="block_margin_large">20dp</dimen>
+</resources>

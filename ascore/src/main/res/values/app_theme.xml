@@ -1,0 +1,43 @@
+<resources>
+
+    <style name="textThemeLight" >
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:textColor">@color/text_color_light</item>
+        <item name="android:textColorHint">@color/color_light_text_hint</item>
+    </style>
+    <style name="textThemeLightSmall" parent="textThemeLight">
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+    <style name="textThemeLightLarge" parent="textThemeLight">
+        <item name="android:textSize">@dimen/text_size_large</item>
+    </style>
+
+
+    <style name="textThemeDark" >
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:textColor">@color/text_color_dark</item>
+        <item name="android:textColorHint">@color/color_dark_text_hint</item>
+
+    </style>
+    <style name="textThemeDarkSmall" parent="textThemeDark">
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+    <style name="textThemeDarkLarge" parent="textThemeDark">
+        <item name="android:textSize">@dimen/text_size_large</item>
+    </style>
+
+    <style name="btnThemeDark" parent="textThemeLight">
+        <item name="android:background">@drawable/btn_bg_dark</item>
+        <item name="android:minHeight">@dimen/btn_height_normal</item>
+    </style>
+    <style name="btnThemeLight" parent="textThemeDark">
+        <item name="android:background">@drawable/btn_bg_light</item>
+        <item name="android:minHeight">@dimen/btn_height_normal</item>
+    </style>
+
+
+    <style name="checkboxStyle" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/btn_check</item>
+    </style>
+
+</resources>

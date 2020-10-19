@@ -1,0 +1,8 @@
+<resources>
+
+
+    <attr name="titleBg" format="color|reference" />
+    <attr name="titleTheme" format="reference" />
+    <attr name="titleBackIcon" format="reference"/>
+
+</resources>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <View
+        android:id="@+id/base_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        />
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="?attr/titleBg"
+        android:minHeight="45dp"
+        android:theme="?attr/titleTheme"
+        app:popupTheme="@style/AppTheme.NoActionBar.PopupOverlay"
+        app:titleTextAppearance="@style/Toolbar_TextAppearance_White"
+        app:contentInsetStart="0dp"
+        app:layout_collapseMode="pin"
+        >
+
+        <RelativeLayout
+            android:id="@+id/rl_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            >
+
+            <ImageView
+                android:id="@+id/img_left"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:clickable="true"
+                android:paddingStart="@dimen/activity_horizontal_margin"
+                android:paddingEnd="@dimen/activity_horizontal_margin"
+                app:srcCompat="?attr/titleBackIcon"
+                android:background="?android:attr/selectableItemBackground"
+                android:visibility="gone" />
+
+
+            <TextView
+                android:id="@+id/tv_lefttitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/img_left"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLength="4"
+                android:singleLine="true"
+                android:textSize="13sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:paddingEnd="10dip"
+                android:paddingStart="10dip"
+                android:singleLine="true"
+                android:textSize="18sp"
+                android:visibility="gone"
+                />
+
+
+            <RelativeLayout
+                android:id="@+id/rl_search"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@id/img_left"
+                android:layout_toLeftOf="@id/ll_right"
+                android:visibility="visible">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/search_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/app_background_white_corners"
+                    android:drawableLeft="@drawable/ic_search"
+                    android:focusable="false"
+                    android:gravity="left|center_vertical"
+                    android:hint="搜索"
+                    android:imeOptions="actionSearch"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColor="@color/color_888888"
+                    android:textColorHint="@color/color_888888"
+                    android:textSize="12sp"
+                    android:paddingLeft="@dimen/margin_largge"
+                    android:paddingRight="@dimen/margin_largge"
+                    android:drawablePadding="@dimen/margin_normal"
+                    android:enabled="true"
+                    />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_right"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingEnd="@dimen/margin_xlargge"
+                android:paddingStart="@dimen/margin_xlargge">
+
+                <ImageView
+                    android:id="@+id/img_left_tvright"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginEnd="@dimen/margin_xlargge"
+                    android:clickable="false"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:clickable="false"
+                    android:paddingStart="@dimen/margin_xlargge"
+                    android:paddingEnd="@dimen/margin_xlargge"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:visibility="gone"
+                    android:background="?android:attr/selectableItemBackground"
+                    />
+
+                <ImageView
+                    android:id="@+id/img_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_toRightOf="@id/tv_right"
+                    android:clickable="false"
+                    android:paddingStart="@dimen/margin_xlargge"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+</merge>

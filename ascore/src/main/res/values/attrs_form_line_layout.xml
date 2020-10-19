@@ -1,0 +1,8 @@
+<resources>
+    <declare-styleable name="FormLineLayout">
+        <attr name="isRequired" format="boolean" />
+        <attr name="title" format="string" />
+        <attr name="titleMinEms" format="integer"/>
+    </declare-styleable>
+
+</resources>

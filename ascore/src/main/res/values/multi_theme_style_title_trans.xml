@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MultiThemeTitleTrans">
+        <item name="titleBg">@drawable/trans</item>
+        <item name="titleTheme">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="titleBackIcon">@drawable/backicon_main_color</item>
+
+    </style>
+</resources>

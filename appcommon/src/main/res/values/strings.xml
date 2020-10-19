@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">appCommon</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_loginid">请输入手机号</string>
+    <string name="prompt_loginid_err">请输入正确的手机号码</string>
+    <string name="prompt_password">请输入密码</string>
+    <string name="prompt_nick">我的昵称</string>
+    <string name="prompt_msg_code">请输入验证码</string>
+    <string name="prompt_nick_err">请输入昵称</string>
+
+    <string name="action_sign_in">登录</string>
+    <string name="send_msg_code">获取验证码</string>
+    <string name="action_sign_in_short">登录</string>
+    <string name="error_invalid_password">请输入6~16位数字或字母的密码，区分大小写</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="login_fail">登录失败，请稍后重试</string>
+    <string name="login_succ">登录成功</string>
+    <string name="there_no_new_version">当前已经是最新版本了哦</string>
+
+    <string name="prompt_regist_password">请设置登录密码</string>
+    <string name="prompt_regist_password_sure">请确定登录密码</string>
+    <string name="prompt_reset_old_password">请输入原密码</string>
+    <string name="prompt_reset_password">请设置新密码</string>
+    <string name="prompt_reset_password_sure">请确认新密码</string>
+    <string name="prompt_enter_owner">企业负责人</string>
+    <string name="prompt_enter_name">企业名称</string>
+    <string name="prompt_enter_uuid">统一社会信用代码</string>
+    <string name="prompt_enter_addr">企业经营地址</string>
+    <string name="sure">确定</string>
+    <string name="title_login">登录</string>
+    <string name="title_regist">新用户注册</string>
+    <string name="title_reset_pwd">找回密码</string>
+    <string name="title_update_pwd">修改登录密码</string>
+
+    <string name="check_pls">请选择</string>
+</resources>

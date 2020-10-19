@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal">
+
+        <include layout="@layout/include_basetitle" />
+
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/prompt_reset_password"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            style="@style/textThemeDarkLarge"
+            android:maxLength="16"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginTop="@dimen/margin_very_largge"
+            app:layout_constraintTop_toBottomOf="@id/toolbar"
+            />
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_pwd_again"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/prompt_reset_password_sure"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            style="@style/textThemeDarkLarge"
+            android:maxLength="16"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+
+            app:layout_constraintTop_toBottomOf="@id/et_pwd"
+            />
+
+
+        <Button
+            android:id="@+id/btn_submit"
+            style="@style/btnThemeDark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginTop="@dimen/margin_very_largge"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:text="完成"
+            app:layout_constraintTop_toBottomOf="@id/et_pwd_again"
+            android:textSize="@dimen/text_size_xlarge"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

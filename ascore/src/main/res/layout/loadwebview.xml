@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:gravity="center"
+    android:orientation="vertical" >
+	
+    <com.wanzhong.core.view.webview.CtSwipeRefreshLayout
+        android:id="@+id/loadwebview_swipe_ly"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <com.wanzhong.core.view.webview.CtWebView
+            android:id="@+id/loadwebview_wb"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#0000"
+            android:scrollbarSize="0dp"
+            android:scrollbarStyle="insideOverlay"
+            android:scrollbars="none"
+            />
+    </com.wanzhong.core.view.webview.CtSwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/loadwebview_lay_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:id="@+id/loadwebview_img_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/loadwebview_error_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"  >
+
+        <TextView
+            android:id="@+id/loadwebview_tv_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#a0a0a0"
+            android:textSize="16sp"
+            />
+        <Button android:id="@+id/loadwebview_btn_error_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/refresh"
+            android:minHeight="36dp"
+        	android:minWidth="100dp"
+        	android:textColor="#fff"
+        	android:visibility="gone"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
